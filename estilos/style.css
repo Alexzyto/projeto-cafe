@@ -374,3 +374,21 @@ div.item2 p {
     margin-left: 80px;
     margin-right: 80px;
 }
+
+#fundocafe3 h2 {
+    color: white;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 44px;
+}
+
+#fundocafe3 p {
+    color: white;
+    text-align: center;
+    margin-left: 340px;
+    margin-right: 340px;
+}
+

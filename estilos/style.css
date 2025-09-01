@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3a1f0d; /* cor base por trás da imagem */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+#fundocafe {
+    background-image: url('../imagens/1page/fundocafe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 93.6vh;
+}
+
+#parte1 {
+    padding: 20px;
+    padding-left: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+header > h1 {
+    color: #F7D2B7;
+    font-size: 52px;
+    position: absolute;
+    left: 0;
+}
+
+nav {
+    display: flex;
+    gap: 45px;
+    background-color: #9e8f7a79;
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.432);
+}
+nav > a {
+    text-decoration: none;
+    color: rgb(255, 246, 235);
+    font-weight: bold;
+    transition: all 0.3s;
+
+}
+
+nav a:hover {
+    color: #F7D2B7;
+     transform: scale(1.1); /* aumenta levemente sem quebrar layout */
+}
+
+a.btn-buy {
+    margin-right: 100px;
+}
+.btn-buy {
+    position: absolute;
+    right: 0;
+    background: #f7d2b7;
+    color: #3a1f0d;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-buy:hover {
+    background: #fff;
+    color: #3a1f0d;
+}
+
+/* INTRO */
+.intro {
+    max-width: 600px;
+}
+
+.small-text {
+    padding-top: 60px;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #EBCDB3;
+}
+
+.highlight2 {
+    font-size: 54px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.desc {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #e5dcd5;
+}
+
+/* Botões intro */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-order {
+    background: #EBCDB3;
+    color: #3a1f0d;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-order:hover {
+    background: #3a1f0d;
+    color: #EBCDB3;
+}
+
+.btn-alt {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-alt:hover {
+    background: #fff;
+    color: #3a1f0d;
+}
+
+/* CAFÉS */
+.cafes {
+    background: #856246;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+ul > img {
+    width: 50px;
+    height: 50px;
+    transform: translateY(-10px);
+}
+
+.cafes ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.cafes li {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff6eb;
+    transition: 0.3s;
+}
+
+.cafes li:hover {
+    color: #f7d2b7;
+}

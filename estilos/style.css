@@ -5,18 +5,20 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+html {
+    padding: 40px 100px;
+    background-color: #3a1f0d;
+}
 body {
-    background-color: #3a1f0d; /* cor base por trás da imagem */
+    background-color: #F5D5BC; /* cor base por trás da imagem */
     font-family: 'Outfit', Arial, Helvetica, sans-serif;
-    color: #fff;
 }
 
 #fundocafe {
     background-image: url('../imagens/1page/fundocafe.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 93.6vh;
+    height: 95vh;
 }
 
 #parte1 {
@@ -32,9 +34,18 @@ header {
     margin-bottom: 80px;
 }
 
+header img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+}
+
 header > h1 {
+    transform: translateX(70px);
     color: #F7D2B7;
     font-size: 52px;
+    text-shadow: 2px 2px 2px #38251E;
     position: absolute;
     left: 0;
 }
@@ -89,6 +100,7 @@ a.btn-buy {
     padding-top: 60px;
     font-size: 24px;
     margin-bottom: 15px;
+    color: #fff;
 }
 
 .highlight {
@@ -98,6 +110,7 @@ a.btn-buy {
     font-weight: bold;
     margin-bottom: 10px;
     color: #EBCDB3;
+    text-shadow: 2px 2px 2px #38251E;
 }
 
 .highlight2 {
@@ -105,6 +118,7 @@ a.btn-buy {
     font-weight: bold;
     margin-bottom: 20px;
     color: #ffffff;
+    text-shadow: 2px 2px 2px #38251E;
 }
 
 .desc {
@@ -178,5 +192,175 @@ ul > img {
 }
 
 .cafes li:hover {
-    color: #f7d2b7;
+    transform: scale(1.1);
+}
+
+h2#prove-nossos {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+p#revelando-os {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+div.container {            
+    height: 400px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 60px;
+}
+
+div.item {
+    
+    width: 300px;
+    background: linear-gradient(to bottom, #EDB990, #fff);
+    border: 4px solid rgb(255, 255, 255);
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+div.container img {
+    width: 260px;
+    height: 260px;
+}
+
+div.item h2 {
+    font-size: 20px;
+}
+
+div.item p {
+    font-size: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+
+div.item p.intensidade {
+    font-size: 16px;
+}
+
+#fundocafe2 {
+    background-image: url('../imagens/2page/fundocafe2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    color: white;
+    padding: 80px;
+}
+
+#fundocafe2 h2 {
+    font-size: 50px;
+}
+
+#fundocafe2 p {
+    font-size: 24px;
+    max-width: 800px;
+    padding-left: 0px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+/**/
+
+div.container2 {            
+    height: 400px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 60px;
+}
+
+div.item2 {
+    
+    width: 400px;
+    background-color: #F8E1CF;
+    padding: 20px 50px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 25px;
+
+}
+
+div.container2 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+div.item2 h2 {
+    padding-top: 15px;
+    font-size: 24px;
+}
+
+div.item2 p {
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+#por {
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+#destacado {
+    background-color: #FFF8F2;
+}
+
+/**/
+
+.perguntas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+/* Coluna esquerda */
+.esquerda {
+  flex: 1;
+  margin-left: 80px;
+}
+
+.esquerda h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.imagem-cafe {
+    width: 400px;
+    height: 400px;
+}
+
+/* Coluna direita */
+.direita {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-right: 80px;
+}
+
+.pergunta {
+  background: #724d31;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.pergunta:hover {
+  transform: scale(1.02);
 }

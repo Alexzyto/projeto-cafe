@@ -6,12 +6,13 @@
     box-sizing: border-box;
 }
 html {
-    padding: 40px 100px;
+    padding: 40px 150px;
     background-color: #3a1f0d;
 }
 body {
     background-color: #F5D5BC; /* cor base por trás da imagem */
     font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
 }
 
 #fundocafe {
@@ -278,6 +279,7 @@ div.container2 {
     padding-left: 100px;
     padding-right: 100px;
     margin-bottom: 60px;
+    gap: 15px;
 }
 
 div.item2 {
@@ -335,12 +337,11 @@ div.item2 p {
 .esquerda h2 {
   font-size: 50px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
 .imagem-cafe {
     width: 400px;
-    height: 400px;
+    height: 250px;
 }
 
 /* Coluna direita */
@@ -363,4 +364,13 @@ div.item2 p {
 
 .pergunta:hover {
   transform: scale(1.02);
+}
+
+#fundocafe3 {
+    background-image: url('../imagens/3page/fundocafe3.png');
+    background-size: cover;
+    border-radius: 20px;
+    height: 20vw;
+    margin-left: 80px;
+    margin-right: 80px;
 }

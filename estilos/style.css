@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 html {
-    padding: 40px 150px;
+    padding: 40px 2vw;
     background-color: #3a1f0d;
 }
 body {
@@ -19,6 +19,7 @@ body {
     background-image: url('../imagens/1page/fundocafe.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right;
     height: 95vh;
 }
 
@@ -36,16 +37,17 @@ header {
 }
 
 header img {
-    width: 60px;
-    height: 60px;
+    width: 4vw;
+    height: 4vw;
     position: absolute;
     left: 0;
+    transform: translateX(-2vw);
 }
 
 header > h1 {
-    transform: translateX(70px);
+    transform: translateX(2vw);
     color: #F7D2B7;
-    font-size: 52px;
+    font-size: 4vw;
     text-shadow: 2px 2px 2px #38251E;
     position: absolute;
     left: 0;
@@ -53,15 +55,16 @@ header > h1 {
 
 nav {
     display: flex;
-    gap: 45px;
+    gap: 1vw;
     background-color: #9e8f7a79;
-    padding: 20px 30px;
+    padding: 1vw 1vw;
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.432);
 }
 nav > a {
     text-decoration: none;
     color: rgb(255, 246, 235);
+    font-size: 1vw;
     font-weight: bold;
     transition: all 0.3s;
 
@@ -73,14 +76,15 @@ nav a:hover {
 }
 
 a.btn-buy {
-    margin-right: 100px;
+    margin-right: 3vw;
 }
 .btn-buy {
     position: absolute;
     right: 0;
     background: #3a1f0d;
     color: #EBCDB3;
-    padding: 12px 25px;
+    font-size: 1vw;
+    padding: 1vw 2vw;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
@@ -95,6 +99,7 @@ a.btn-buy {
 /* INTRO */
 .intro {
     max-width: 701px;
+    padding-left: -2vw;
 }
 
 .small-text {

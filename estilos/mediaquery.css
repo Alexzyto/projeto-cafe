@@ -7,11 +7,12 @@
 
 /* Tablets */
 @media screen and (min-width: 800px) and (max-width: 992px) {
-          html {
-        padding: 20px 50px;
+    html {
+        padding: 10px 15px;
     }
     #fundocafe {
         height: 80vh;
+        background-position: 60%;
     }
     #parte1 {
         padding-left: 50px;
@@ -31,30 +32,75 @@
     header > h1 {
         position: static;
         transform: none;
-        font-size: 36px;
+        font-size: 56px;
         color: #F7D2B7;
         text-shadow: 1px 1px 1px #38251E;
         margin-right: auto;
         align-self: center;
     }
+
+    /* Menu hamburguer visível */
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-55%);
+        z-index: 1001;
+    }
+    /* Nav escondido por padrão no mobile */
     nav {
-        background-color: #9e8f7a79;
+        display: none;
+        flex-direction: column;
+        gap: 25px;
+        background-color: #9e8f7acc;
         padding: 15px 20px;
         border-radius: 20px;
         border: 1px solid rgba(255, 255, 255, 0.432);
-        gap: 25px;
+        position: absolute;
+        top: 150%;
+        right: 0;
+        width: 200px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: flex;
     }
     nav > a {
-        font-size: 14px;
+        font-size: 16px;
+        color: #fff6eb;
+        font-weight: 600;
     }
     a.btn-buy {
         position: static;
-        margin-right: 0;
-        margin-top: 10px;
-        padding: 10px 20px;
+        margin-right: 50px;
+        padding: 15px 0px;
         font-size: 14px;
         border-radius: 20px;
+        width: 40%;
+        text-align: center;
     }
+
+    /* Intro */
+    .intro {
+        max-width: 80%;
+        padding-left: 10px;
+    }
+    .small-text {
+        font-size: 2.7vw;
+        padding-top: 30px;
+    }
+    .highlight, .highlight2 {
+        font-size: 4.5vw;
+        margin-bottom: 8px;
+    }
+    .desc {
+        font-size: 2.4vw;
+        margin-bottom: 20px;
+    }
+
     /* Container dos cafés */
     div.container {
         flex-wrap: wrap;
@@ -70,6 +116,34 @@
     div.container img {
         width: 100%;
         height: auto;
+    }
+
+    .cafes ul > img {
+        width: 4.5vw;
+        height: 4.5vw;
+        transform: translateY(-5px);
+    }
+    .cafes li {
+        font-size: 2.7vw;
+        padding-bottom: 25px;
+    }
+
+
+    /* Fundo café 2 */
+    #fundocafe2 {
+        height: auto;
+        padding: 40px 20px;
+        background-position: center ;
+    }
+
+    #fundocafe2 h2 {
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+    #fundocafe2 p {
+        font-size: 16px;
+        max-width: 60%;
+        padding: 0;
     }
 
     /* Ajustes para container2 (depoimentos) */
@@ -149,7 +223,7 @@
     header > h1 {
         position: static;
         transform: none;
-        font-size: 28px;
+        font-size: 48px;
         color: #F7D2B7;
         text-shadow: 1px 1px 1px #38251E;
         margin-right: auto;

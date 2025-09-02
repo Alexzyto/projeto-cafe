@@ -168,13 +168,13 @@
     nav {
         display: none;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
         background-color: #9e8f7acc;
         padding: 15px 20px;
         border-radius: 20px;
         border: 1px solid rgba(255, 255, 255, 0.432);
         position: absolute;
-        top: 110%;
+        top: 150%;
         right: 0;
         width: 200px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.3);
@@ -219,7 +219,7 @@
 
     /* Cafés */
     .cafes ul {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
         padding: 0 10px;
     }
@@ -229,7 +229,7 @@
         transform: translateY(-5px);
     }
     .cafes li {
-        font-size: 20px;
+        font-size: 16px;
     }
     h2#prove-nossos {
         font-size: 32px;

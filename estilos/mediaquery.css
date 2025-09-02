@@ -7,9 +7,7 @@
 
 /* Tablets */
 @media screen and (min-width: 800px) and (max-width: 992px) {
-    html {
-        padding: 10px 15px;
-    }
+    
     #fundocafe {
         height: 80vh;
         background-position: 60%;
@@ -193,9 +191,6 @@
 
 /* Celulares */
 @media screen and (max-width: 800px) {
-  html {
-        padding: 10px 15px;
-    }
     body {
         padding-bottom: 20px;
     }

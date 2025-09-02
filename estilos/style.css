@@ -6,7 +6,9 @@
     box-sizing: border-box;
 }
 html {
-    padding: 40px 2vw;
+    min-width: 800px;
+    max-width: 1200px;
+    margin: auto;
     background-color: #3a1f0d;
 }
 body {
@@ -37,34 +39,35 @@ header {
 }
 
 header img {
-    width: 4vw;
-    height: 4vw;
+    width: 60px;
+    height: 60px;
     position: absolute;
     left: 0;
-    transform: translateX(-2vw);
 }
 
 header > h1 {
-    transform: translateX(2vw);
+    transform: translateX(65px);
     color: #F7D2B7;
-    font-size: 4vw;
+    font-size: 45px;
     text-shadow: 2px 2px 2px #38251E;
     position: absolute;
-    left: 0;
+    left: 0;   
 }
 
 nav {
+    min-width: 400px;
+    
     display: flex;
     gap: 1vw;
     background-color: #9e8f7a79;
-    padding: 1vw 1vw;
+    padding: 15px 25px;
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.432);
 }
 nav > a {
     text-decoration: none;
     color: rgb(255, 246, 235);
-    font-size: 1vw;
+    font-size: 15px;
     font-weight: bold;
     transition: all 0.3s;
 
@@ -76,15 +79,15 @@ nav a:hover {
 }
 
 a.btn-buy {
-    margin-right: 3vw;
+    margin-right: 2vw;
 }
 .btn-buy {
     position: absolute;
     right: 0;
     background: #3a1f0d;
     color: #EBCDB3;
-    font-size: 1vw;
-    padding: 1vw 2vw;
+    font-size: 16px;
+    padding: 15px 25px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
@@ -220,6 +223,7 @@ div.container {
     padding-left: 100px;
     padding-right: 100px;
     margin-bottom: 60px;
+    gap: 10px;
 }
 
 div.item {
@@ -233,8 +237,8 @@ div.item {
 }
 
 div.container img {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
 }
 
 div.item h2 {
@@ -243,8 +247,8 @@ div.item h2 {
 
 div.item p {
     font-size: 12px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 29px;
+    padding-right: 29px;
     padding-bottom: 10px;
 }
 
@@ -276,7 +280,7 @@ div.item p.intensidade {
 /**/
 
 div.container2 {            
-    height: 400px;
+    height: 500px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -287,10 +291,9 @@ div.container2 {
 }
 
 div.item2 {
-    
     width: 400px;
     background-color: #F8E1CF;
-    padding: 20px 50px;
+    padding: 20px 30px;
     text-align: center;
     border-radius: 15px;
     margin-bottom: 25px;
@@ -311,7 +314,7 @@ div.item2 h2 {
 
 div.item2 p {
     padding-top: 15px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #por {
@@ -382,8 +385,8 @@ div.item2 p {
 #fundocafe3 h2 {
     color: white;
     text-align: center;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
     padding-top: 40px;
     padding-bottom: 20px;
     font-size: 44px;
@@ -392,8 +395,8 @@ div.item2 p {
 #fundocafe3 p {
     color: white;
     text-align: center;
-    margin-left: 340px;
-    margin-right: 340px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 /**/

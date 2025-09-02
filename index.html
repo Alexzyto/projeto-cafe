@@ -6,6 +6,7 @@
     <title>projeto-cafe</title>
     <link rel="shortcut icon" href="imagens/cafe-logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
 <body>
         <div id="fundocafe">
@@ -13,6 +14,10 @@
                 <header>
                     <img src="imagens/cafe-logo.png" alt="">
                     <h1>Verna </h1>
+
+                    <!-- Botão menu hamburguer -->
+    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+
                     <nav>
                     <a href="#">Mais Vendidos</a>
                     <a href="#">Sobre</a>
@@ -132,5 +137,16 @@
             </div>
         </form>
     </div>
+
+    <script>
+            document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+
+    menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+    });
+    </script>
 </body>
 </html>

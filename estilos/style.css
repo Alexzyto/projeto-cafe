@@ -437,3 +437,13 @@ form {
   transform: scale(1.05);
 }
 
+/* Botão hamburguer (esconde no desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #fff6eb;
+  cursor: pointer;
+  margin-left: auto;
+}

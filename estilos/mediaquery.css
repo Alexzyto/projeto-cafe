@@ -1,0 +1,236 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/* =============================
+   MEDIA QUERY - RESPONSIVIDADE
+   ============================= */
+
+/* Tablets - até 1024px */
+@media screen and (max-width: 1024px) {
+  html {
+    padding: 20px 40px;
+  }
+
+  header {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  nav {
+    gap: 20px;
+    padding: 10px 20px;
+  }
+
+  .intro {
+    max-width: 90%;
+  }
+
+  div.container,
+  div.container2 {
+    padding: 0 40px;
+  }
+
+  #fundocafe2 {
+    padding: 40px;
+    height: auto;
+  }
+
+  #fundocafe3 {
+    margin: 40px;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  #fundocafe3 h2,
+  #fundocafe3 p {
+    margin: 0 auto;
+  }
+}
+
+/* Celulares grandes - até 768px */
+@media screen and (max-width: 768px) {
+  html {
+    padding: 10px 20px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header img {
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  header > h1 {
+    position: static;
+    transform: none;
+    font-size: 36px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  a.btn-buy {
+    position: static;
+    margin: 20px 0 0;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.container,
+  div.container2 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  div.item,
+  div.item2 {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .perguntas {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .esquerda,
+  .direita {
+    margin: 0;
+  }
+
+  .imagem-cafe {
+    width: 100%;
+    height: auto;
+  }
+
+  #fundocafe2 {
+    padding: 20px;
+  }
+
+  #fundocafe2 h2 {
+    font-size: 36px;
+  }
+
+  #fundocafe2 p {
+    font-size: 18px;
+  }
+
+  #fundocafe3 h2 {
+    font-size: 28px;
+    padding: 20px 0;
+  }
+
+  #fundocafe3 p {
+    margin: 0 20px;
+  }
+
+  form {
+    height: auto;
+  }
+
+  .campo {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    gap: 10px;
+  }
+
+  .campo input,
+  .campo button {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* Celulares pequenos - até 480px */
+@media screen and (max-width: 480px) {
+  .small-text {
+    font-size: 16px;
+  }
+
+  .highlight {
+    font-size: 28px;
+  }
+
+  .highlight2 {
+    font-size: 26px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+
+  .cafes ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cafes li {
+    font-size: 18px;
+  }
+
+  h2#prove-nossos {
+    font-size: 24px;
+    padding: 20px 0;
+  }
+
+  #fundocafe2 h2 {
+    font-size: 24px;
+  }
+
+  #fundocafe2 p {
+    font-size: 16px;
+  }
+
+  #fundocafe3 h2 {
+    font-size: 22px;
+  }
+
+  #fundocafe3 p {
+    font-size: 14px;
+  }
+
+  div.item img {
+    width: 100%;
+    height: auto;
+  }
+
+   .menu-toggle {
+    display: block; /* aparece */
+  }
+
+  nav {
+    display: none; /* escondido inicialmente */
+    flex-direction: column;
+    background-color: #9e8f7a;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  nav a {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  nav.active {
+    display: flex; /* mostra quando ativo */
+  }
+}

@@ -6,7 +6,7 @@
    ============================= */
 
 /* Tablets - até 1024px */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 800px) and (max-width: 992px) {
   html {
     padding: 20px 40px;
   }
@@ -48,8 +48,8 @@
   }
 }
 
-/* Celulares grandes - até 768px */
-@media screen and (max-width: 768px) {
+/* Celulares */
+@media screen and (max-width: 800px) {
   html {
     padding: 10px 20px;
   }
@@ -154,63 +154,8 @@
     width: 100%;
     border-radius: 10px;
   }
-}
 
-/* Celulares pequenos - até 480px */
-@media screen and (max-width: 480px) {
-  .small-text {
-    font-size: 16px;
-  }
-
-  .highlight {
-    font-size: 28px;
-  }
-
-  .highlight2 {
-    font-size: 26px;
-  }
-
-  .desc {
-    font-size: 16px;
-  }
-
-  .cafes ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .cafes li {
-    font-size: 18px;
-  }
-
-  h2#prove-nossos {
-    font-size: 24px;
-    padding: 20px 0;
-  }
-
-  #fundocafe2 h2 {
-    font-size: 24px;
-  }
-
-  #fundocafe2 p {
-    font-size: 16px;
-  }
-
-  #fundocafe3 h2 {
-    font-size: 22px;
-  }
-
-  #fundocafe3 p {
-    font-size: 14px;
-  }
-
-  div.item img {
-    width: 100%;
-    height: auto;
-  }
-
-   .menu-toggle {
+  .menu-toggle {
     display: block; /* aparece */
   }
 
@@ -234,3 +179,4 @@
     display: flex; /* mostra quando ativo */
   }
 }
+

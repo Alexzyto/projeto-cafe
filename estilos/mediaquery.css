@@ -7,7 +7,82 @@
 
 /* Tablets - até 1024px */
 @media screen and (min-width: 800px) and (max-width: 992px) {
-          padding: 15px 30px;
+          html {
+        padding: 20px 50px;
+    }
+    #fundocafe {
+        height: 80vh;
+    }
+    #parte1 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    header img {
+        position: static;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    header > h1 {
+        position: static;
+        transform: none;
+        font-size: 36px;
+        color: #F7D2B7;
+        text-shadow: 1px 1px 1px #38251E;
+        margin-right: auto;
+        align-self: center;
+    }
+    nav {
+        background-color: #9e8f7a79;
+        padding: 15px 20px;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.432);
+        gap: 25px;
+    }
+    nav > a {
+        font-size: 14px;
+    }
+    a.btn-buy {
+        position: static;
+        margin-right: 0;
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+    /* Container dos cafés */
+    div.container {
+        flex-wrap: wrap;
+        height: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 20px;
+    }
+    div.item {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    div.container img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Ajustes para container2 (depoimentos) */
+    div.container2 {
+        flex-wrap: wrap;
+        height: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 20px;
+    }
+    div.item2 {
+        width: 45%;
+        padding: 15px 30px;
     }
     /* Perguntas */
     .perguntas {
@@ -38,6 +113,10 @@
         margin: 0 20px;
         font-size: 16px;
     }
+}
+
+
+
 /* Celulares */
 @media screen and (max-width: 800px) {
   html {

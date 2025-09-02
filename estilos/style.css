@@ -78,8 +78,8 @@ a.btn-buy {
 .btn-buy {
     position: absolute;
     right: 0;
-    background: #f7d2b7;
-    color: #3a1f0d;
+    background: #3a1f0d;
+    color: #EBCDB3;
     padding: 12px 25px;
     border-radius: 30px;
     text-decoration: none;
@@ -88,7 +88,7 @@ a.btn-buy {
 }
 
 .btn-buy:hover {
-    background: #fff;
+    background: #EBCDB3;
     color: #3a1f0d;
 }
 
@@ -151,9 +151,8 @@ a.btn-buy {
 }
 
 .btn-alt {
-    background: transparent;
-    color: #fff;
-    border: 1px solid #fff;
+    background: #EBCDB3;
+    color: #3a1f0d;
     padding: 12px 25px;
     border-radius: 30px;
     text-decoration: none;
@@ -162,8 +161,8 @@ a.btn-buy {
 }
 
 .btn-alt:hover {
-    background: #fff;
-    color: #3a1f0d;
+    background: #3a1f0d;
+    color: #EBCDB3;
 }
 
 /* CAFÉS */

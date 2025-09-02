@@ -192,10 +192,9 @@
     a.btn-buy {
         position: static;
         margin-right: 50px;
-        padding: 10px 20px;
+        padding: 15px 0px;
         font-size: 14px;
         border-radius: 20px;
-        display: block;
         width: 30%;
         text-align: center;
     }
@@ -219,17 +218,15 @@
 
     /* Cafés */
     .cafes ul {
-        flex-direction: row;
-        gap: 10px;
-        padding: 0 10px;
+        padding-bottom: 15px;
     }
     .cafes ul > img {
-        width: 40px;
-        height: 40px;
+        width: 4vw;
+        height: 4vw;
         transform: translateY(-5px);
     }
     .cafes li {
-        font-size: 16px;
+        font-size: 2.6vw;
     }
     h2#prove-nossos {
         font-size: 32px;
@@ -312,8 +309,9 @@
     }
     /* Perguntas */
     .perguntas {
-        flex-direction: column;
+        flex-wrap: wrap;
         padding: 20px 10px;
+        padding-top: 0px;
     }
     .esquerda, .direita {
         flex: 1 1 100%;
@@ -321,14 +319,21 @@
         text-align: center;
     }
     .esquerda h2 {
-        font-size: 28px;
+        font-size: 35px;
     }
     .imagem-cafe {
+        padding-top: 10px;
         width: 250px;
         height: auto;
         margin: 0 auto;
     }
+
+    .esquerda {
+        margin-left: 0px;
+    }
+
     .direita {
+        text-align: center;
         gap: 10px;
         margin: 0 10px;
     }
@@ -336,6 +341,35 @@
         font-size: 14px;
         padding: 12px 15px;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     #fundocafe3 {
         margin: 0 10px;

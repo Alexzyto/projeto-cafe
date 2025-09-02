@@ -195,7 +195,7 @@
         padding: 15px 0px;
         font-size: 14px;
         border-radius: 20px;
-        width: 30%;
+        width: 40%;
         text-align: center;
     }
     /* Intro */
@@ -230,8 +230,7 @@
     }
     h2#prove-nossos {
         font-size: 32px;
-        padding-top: 30px;
-        padding-bottom: 15px;
+        padding: 30px 20px 15px 20px;
     }
     p#revelando-os {
         font-size: 16px;
@@ -271,7 +270,7 @@
     #fundocafe2 {
         height: auto;
         padding: 40px 20px;
-        background-position: right ;
+        background-position: center ;
     }
 
     #fundocafe2 h2 {
@@ -342,35 +341,6 @@
         padding: 12px 15px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     #fundocafe3 {
         margin: 0 10px;
         height: auto;
@@ -383,7 +353,7 @@
         padding-top: 20px;
     }
     #fundocafe3 p {
-        font-size: 16px;
+        font-size: 15px;
         margin: 0 10px 20px 10px;
     }
     /* Formulário */
@@ -391,9 +361,7 @@
         height: auto;
         padding: 0 10px 20px 10px;
     }
-    .campo {
-        max-width: 100%;
-    }
+
     .campo input {
         font-size: 14px;
         padding: 10px 15px;

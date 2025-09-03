@@ -144,17 +144,25 @@
     </section>
 
     <script>
-            document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const menuBtns = document.querySelectorAll(".menu-toggle");
     const nav = document.querySelector("nav");
+    const navLinks = document.querySelectorAll("nav a");
 
+    // Abrir/fechar menu ao clicar no botão hambúrguer
     menuBtns.forEach(button => {
         button.addEventListener("click", () => {
             nav.classList.toggle("active");
         });
-        });
     });
 
-    </script>
+    // Fechar menu ao clicar em qualquer link
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            nav.classList.remove("active");
+        });
+    });
+});
+</script>
 </body>
 </html>

@@ -106,7 +106,7 @@ p > a#facalogin:hover {
     text-decoration: underline;
 }
 
-a:hover , a#termos:hover {
+a#termos:hover {
     text-decoration: underline;
 }
 
@@ -335,4 +335,40 @@ input:-webkit-autofill {
   -webkit-text-fill-color: white !important;
   transition: background-color 9999s ease-in-out 0s;
 }
+
+
+header {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        gap: 15px;
+    }
+
+    header img {
+        width: 90px;
+        height: 90px;
+    }
+
+    header a {
+        font-family: 'Outfit', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #F7D2B7;
+        font-size: 70px;
+        text-shadow: 2px 2px 2px #38251E;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+
+    header a:hover {
+        transform: scale(1.1); /* aumenta levemente sem quebrar layout */
+    }
+
+    #logo {
+        transition: all 0.3s;
+    }
+
+    #logo:hover {
+        transform: scale(1.1); /* aumenta levemente sem quebrar layout */
+    }
+
 

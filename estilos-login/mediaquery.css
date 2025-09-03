@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+/* Todas as demais mídeas
+
+ Typical Device breakpoints (2024)
+Pequenas telas: até 600px
+Celular: de 600px até 800px
+Tablet: de 800px até 992px
+Desktop: de 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+@media screen and (max-width: 800px) {
+    /* CONFIGURAÇÃO PARA CELULAR */
+
+    section#login {
+        width: 300px;
+        height: 618px;
+    }
+
+    section#login > div#imagem {
+        margin: 12px;
+        height: 37%;
+        width: 92%;
+    }
+
+    section#login > div#formulario {
+        transform: translate(5%,7%);
+        padding: 12px;
+        display: block;
+    }
+
+    section#login > div#formulario > h1 {
+        font-size: 24px;
+        transform: translateY(-47px);
+        text-align: center;
+        padding-bottom: 5px;
+        margin-right: 28px;
+
+    }
+
+    section#login > div#formulario > p#jatemconta {
+        transform: translateY(257px);
+        text-align: center;
+        margin-right: 25px;
+    }
+
+    div.campo {
+            transform: translateY(0px);
+    }   
+
+    div.campo2 > input {
+        margin-left: 0px; /* ajuste o valor como preferir */
+    }
+
+    div.campo1 > input , div.campo2 > input , div.campo > input  {
+        transform: translateY(-60px);
+        width: 242px;
+        height: 30px;
+        margin-bottom: 8px;
+    }
+
+    label#termo {
+        font-size: 11px;
+        color: rgb(203, 206, 209);
+        display: inline;
+        float: none;
+        transform: none;
+        padding: 5px;
+    }
+
+    div#campobox {
+        gap: 0.5px;
+        margin-bottom: 10px;
+        transform: translateY(-56px);
+    }
+
+    form > input[type=submit] {
+        transform: translateY(-60px);
+    }
+
+    .divider {
+        transform: translateY(-60px);
+        font-size: 13px;
+        padding-right: 25px;        
+    }
+
+    .divider::before {        
+        transform: translateY(0px);
+        padding-left: 40px;
+        width: 6%;
+    }
+
+    .divider::after {        
+        padding-left: 35px;
+        width: 3.5%;
+        transform: translateX(-36px);
+    }
+    
+    a#google , a#apple {        
+        transform: translateY(-62px);
+        width: 111px;
+        height: 32px;
+    }
+
+    a#apple {
+        margin-left: 20px;
+        float: left;
+    }
+
+    a#google:hover , a#apple:hover  {
+        transform: translateY(-65px);
+    }
+    
+    a#voltar {
+        transform: translateY(-20px);        
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* CONFIGURAÇÃO PARA DESKTOP */
+
+    section#login {
+        width: 950px;
+        height: 600px;
+    }
+
+    section#login > div#imagem {
+        margin: 12px;
+        height: 96%;
+        width: 50%;
+
+        float: right;
+    }
+    
+    section#login > div#formulario {
+    transform: translate(5%,10%);
+    padding-top: 40px;
+    padding-left: 20px;
+    display: block;
+    }
+
+    section#login > div#formulario > h1 {
+        font-size: 40px;
+        transform: translateY(-42px);
+    }
+
+    p#esqueceusuasenha {
+        transform: translateY(-40px);
+    }
+
+    section#login > div#formulario > p#jatemconta {
+        font-size: 16px;
+        transform: translateY(-30px);
+    }
+
+    div.campo1 > input , div.campo2 > input {
+        width: 155px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
+    div.campo > input {
+        width: 320px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
+    div#campobox {        
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    label#termo {
+        font-size: 14px;
+    }
+
+    form > input[type=submit] {
+        
+        font-size: 1.4em;
+        height: 45px;
+        width: 320px;
+    }
+
+    .divider {
+        font-size: 15px;
+        transform: translateX(-55px);
+        
+    }
+    
+    .divider::before {
+        transform: translateY(0px);
+        margin-left: 56px;
+        padding-left: 40px;
+        width: 4.2%;
+    }
+
+    .divider::after {
+        padding-left: 40px;
+        width: 4.2%;
+        transform: translateX(-506px);
+    }
+    
+    .brand-logo {
+        width: 30px;
+        height: 30px;
+        transform: translateY(0);
+    }
+    
+    a#google , a#apple { 
+        width: 155px;
+        height: 45px;  
+    }
+    
+    a#apple {
+        margin-left: 60px;
+        float: left;
+    }
+}

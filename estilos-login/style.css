@@ -1,0 +1,334 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    font-family: 'Lexend', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background: #F7D2B7 url(../imagens/img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+     /* background-image: linear-gradient(to top, #32264b88, #4c266898); */
+    color: white;
+}
+
+main {
+    position: relative;
+    min-height: 100dvh; /* melhor que vh no mobile */
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+
+    background-image: linear-gradient(45deg, #f7d2b748, #f7d2b79c );
+    backdrop-filter: blur(10px);
+    width: 800px;
+    height: 530px;
+    border-radius: 20px;
+    box-shadow: 1px 10px 50px rgba(0, 0, 0, 0.747);
+
+    transform: translate(-50%,-50%);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #F7D2B7 url(../imagens/mountain-minimal-4k.jpg) no-repeat;
+    height: 200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    width: 53%;
+    height: 94%;
+    margin: 17px;
+    border-radius: 10px;
+
+    transition: transform 0.3s ease;
+     position: relative;         /* necessário para z-index funcionar corretamente */
+    z-index: 1;                 /* garante que fique acima de elementos ocultos */
+    pointer-events: auto;       /* garante que o hover funcione */
+}
+
+section#login > div#imagem:hover {
+    transform: scale(1.01);
+}
+
+section#login > div#formulario {
+    transform: translate(5%,3%);
+    padding: 50px;
+    display: block;
+    
+}
+
+section#login > div#formulario > h1 {
+    font-size: 33px;
+    transform: translateY(-32px);
+}
+
+p#esqueceusuasenha {
+    transform: translateY(-40px);
+        }
+
+section#login > div#formulario > p#jatemconta  {
+    font-size: 14px;
+    color: rgb(209, 206, 203);
+    margin-bottom: 15px;
+    transform: translateY(-15px);
+    height: 0px;
+}
+
+p#aindanaotemconta {
+    font-size: 13px;
+    color: rgb(209, 206, 203);
+    transform: translateY(180px);
+    height: 0px;
+}
+
+a#facalogin , a#termos {
+    text-decoration: none;
+    color: #eeb68f;
+    padding: 7px; /* Ajusta o padding para melhor espaçamento */
+}
+
+p > a#facalogin:hover {
+    text-decoration: underline;
+}
+
+a:hover , a#termos:hover {
+    text-decoration: underline;
+}
+
+label {
+    display: none;
+}
+
+
+input[type="text"] {
+    position: relative;
+    z-index: 10;
+}
+
+input:focus {
+  outline: none;          /* se quiser remover o contorno azul */
+}
+
+div.campo {
+            transform: translateY(-36px);
+        }   
+        
+div.campo1 > input , div.campo2 > input {
+    background-color: #3a1f0d;
+    display: block;
+    font-size: 1em;
+    width: 115px;
+    height: 37px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 14px;
+    float: left; /* Para que os campos fiquem lado a lado */
+}
+
+div.campo1 > input {
+    float: left; /* Para que os campos fiquem lado a lado */
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+div.campo2 > input {
+    margin-left: 12px; /* ajuste o valor como preferir */
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+div.campo > input {
+    background-color: #3a1f0d;
+    display: block;
+    
+    font-size: 1em;
+    width: 240px;
+    height: 37px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 14px;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+input[type="password"] {
+    letter-spacing: 2px;
+}
+
+input[type="password"]::placeholder {
+    letter-spacing: normal;
+}
+
+input[type="password"]:focus {
+    letter-spacing: 2px;
+}
+
+div.campo > input[type=password] {
+    letter-spacing: ;
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+}
+
+#campobox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+#icaixa {
+  accent-color: #3a1f0d; /* Magenta/Roxo — troque se quiser outro tom */
+}
+
+label#termo {
+    font-size: 11px;
+    color: rgb(203, 206, 209);
+    transform: translateX(-47px);
+    display: inline;
+    float: none;
+    transform: none;
+}
+
+label#termo > a:hover {
+    text-decoration: underline;
+}
+
+form > input[type=submit] {
+    transform: translateY(-15px);
+    padding-left: 50px;
+    padding-right: 50px;
+    display: block;
+    font-size: 1.2em;
+    height: 40px;
+    width: 240px;
+    background-color: #3a1f0d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+form > input[type=submit]:hover {
+    background-color: #3a1f0d;
+}
+
+.divider {
+    color: #c0c0c0;
+    transform: translateX(-28px);
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    font-size: 0.8em;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 7%;
+    height: 1px;
+    background: #c0c0c0;
+}
+
+.divider::before {
+    left: 0;
+    transform: translateX(437px);
+}
+
+.divider::after {
+    right: 0;
+    transform: translateX(-27px);
+}
+
+article {
+    padding-top: 10px;
+}
+
+.brand-link {
+transition: all 0.3s ease;
+}
+
+.brand-link:hover {
+   box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);
+}
+
+.brand-logo {
+    width: 20px;
+    height: 20px;
+    
+}
+
+a#google , a#apple { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: aliceblue;
+    text-decoration: none;
+    width: 115px;
+    height: 37px;
+    border-radius: 5px;
+    padding: 2px;
+    text-align: center;
+    border: 1px outset rgba(255, 255, 255, 0.644);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.253);
+}
+
+a#google {
+    float: left; /* Para que os campos fiquem lado a lado */
+}
+
+a#google:hover {
+    transform: translateY(-2px);
+}
+
+a#apple {
+    transform: translateX(-52px);
+    float: right; /* Para que os campos fiquem lado a lado */
+}
+
+a#apple:hover {
+    transform: translateY(-2px)
+    translateX(-52px)
+}
+
+a#voltar {
+    position: relative;
+    z-index: 10;
+    display: block;
+    color: #3a1f0d;
+    text-decoration: none;
+    font-size: 14px;
+    transform: translateY(-50px); 
+}
+
+a#voltar:hover {
+    text-decoration: underline;
+}
+
+/* Corrige o autofill do navegador (especialmente no Chrome) */
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+

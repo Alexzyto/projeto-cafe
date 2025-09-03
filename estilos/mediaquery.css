@@ -170,6 +170,7 @@
     h2#prove-nossos {
         font-size: 40px;
     }
+
     .perguntas {
         flex-direction: column; /* Colocar tudo em coluna */
         align-items: center; /* Centralizar */
@@ -308,13 +309,7 @@
     }
     
     a.btn-buy {
-        position: static;
-        margin-right: 50px;
-        padding: 15px 0px;
-        font-size: 14px;
-        border-radius: 20px;
-        width: 40%;
-        text-align: center;
+        display: none;
     }
 
     /* Intro */
@@ -322,19 +317,42 @@
         padding-left: 10px;
     }
     .small-text {
-        font-size: 18px;
+        font-size: 13px;
         padding-top: 30px;
     }
     .highlight, .highlight2 {
-        font-size: 33px;
+        font-size: 22px;
         margin-bottom: 8px;
         max-width: 600px;
     }
     .desc {
-        font-size: 18px;
+        font-size: 15px;
         margin-bottom: 20px;
         max-width: 400px;
     }
+
+    .btn-order {
+        background: #EBCDB3;
+        color: #3a1f0d;
+        padding: 12px 20px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+        font-size: 12px;
+    }
+
+.btn-alt {
+        background: #EBCDB3;
+        color: #3a1f0d;
+        padding: 12px 20px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+        font-size: 12px;
+    }
+
 
     /* Cafés */
     .cafes ul {

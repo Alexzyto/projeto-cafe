@@ -9,7 +9,7 @@
 @media screen and (min-width: 800px) and (max-width: 992px) {
 
     #fundocafe {
-        height: 80vh;
+        height: 800px;
         background-position: 60%;
     }
 
@@ -235,7 +235,7 @@
     }
     
     #fundocafe {
-        height: 70vh;
+        height: 800px;
         background-position: center ;
         background-size: cover;
     }

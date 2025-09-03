@@ -116,6 +116,7 @@
         margin-right: 50px;
         gap: 0px;
     }
+
     div.item {
         width: 45%;
         margin-bottom: 20px;
@@ -126,6 +127,7 @@
         height: 4.5vw;
         transform: translateY(-5px);
     }
+
     .cafes li {
         font-size: 18px;
         padding-bottom: 25px;
@@ -159,6 +161,7 @@
         margin-bottom: 0px;
         gap: 20px;
     }
+
     div.item2 {
         width: 45%;
         padding: 15px 30px;
@@ -167,47 +170,46 @@
     h2#prove-nossos {
         font-size: 40px;
     }
-.perguntas {
-    flex-direction: column; /* Colocar tudo em coluna */
-    align-items: center; /* Centralizar */
-    text-align: center;
-}
+    .perguntas {
+        flex-direction: column; /* Colocar tudo em coluna */
+        align-items: center; /* Centralizar */
+        text-align: center;
+    }
 
-/* Coluna esquerda */
-.esquerda {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row; /* Frase e imagem lado a lado */
-    margin: 0;
-    gap: 20px; /* Espaço entre título e imagem */
-}
+    /* Coluna esquerda */
+    .esquerda {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row; /* Frase e imagem lado a lado */
+        margin: 0;
+        gap: 20px; /* Espaço entre título e imagem */
+    }
 
-.esquerda h2 {
-  font-size: 45px;
-  font-weight: bold;
-  text-align: left;
+    .esquerda h2 {
+        font-size: 45px;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 45px;
+    }
 
-  margin-left: 45px;
-}
+    .imagem-cafe {
+        width: 380px;
+        height: 200px;
+        padding-right: 45px;
+    }
 
-.imagem-cafe {
-    width: 380px;
-    height: 200px;
-    padding-right: 45px;
-}
+    /* Coluna direita */
+    .direita {
+        margin: 30px 0 0 0;
+        width: 90%; /* Ocupa boa parte da tela */
+        align-items: center;
+    }
 
-/* Coluna direita */
-.direita {
-    margin: 30px 0 0 0;
-    width: 90%; /* Ocupa boa parte da tela */
-    align-items: center;
-}
-
-.pergunta {
-    width: 100%; /* Ocupa toda a largura do container */
-    font-size: 18px;
-}
+    .pergunta {
+        width: 100%; /* Ocupa toda a largura do container */
+        font-size: 18px;
+    }
 
     #fundocafe3 {
         margin-left: 30px;
@@ -225,34 +227,38 @@
     }
 }
 
-
 /* Celulares */
 @media screen and (max-width: 800px) {
     
     body {
         padding-bottom: 20px;
     }
+    
     #fundocafe {
         height: 70vh;
         background-position: center ;
         background-size: cover;
     }
+
     #parte1 {
         padding-left: 25px;
         padding-right: 25px;
     }
+
     header {
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 30px;
         position: relative;
     }
+
     header img {
         position: static;
         width: 40px;
         height: 40px;
         margin-right: 10px;
     }
+
     header  h1 {
         position: static;
         transform: none;
@@ -262,6 +268,7 @@
         margin-right: auto;
         align-self: center;
     }
+
     /* Menu hamburguer visível */
     .menu-toggle {
         display: block;
@@ -271,6 +278,7 @@
         transform: translateY(-55%);
         z-index: 1001;
     }
+
     /* Nav escondido por padrão no mobile */
     nav {
         display: none;
@@ -292,11 +300,13 @@
     nav.active {
         display: flex;
     }
+
     nav > a {
         font-size: 16px;
         color: #fff6eb;
         font-weight: 600;
     }
+    
     a.btn-buy {
         position: static;
         margin-right: 50px;
@@ -306,6 +316,7 @@
         width: 40%;
         text-align: center;
     }
+
     /* Intro */
     .intro {
         padding-left: 10px;
@@ -325,30 +336,33 @@
         max-width: 400px;
     }
 
-
-    
     /* Cafés */
     .cafes ul {
         padding-bottom: 15px;
     }
+
     .cafes ul > img {
         width: 4vw;
         height: 4vw;
         transform: translateY(-5px);
     }
+
     .cafes li {
         font-size: 2.4vw;
     }
+
     h2#prove-nossos {
         font-size: 32px;
         padding: 30px 50px 15px 50px;
     }
+
     p#revelando-os {
         font-size: 16px;
         padding-bottom: 30px;
         padding-left: 90px;
         padding-right: 90px;
     }
+
     div.container {
         flex-direction: column;
         height: auto;
@@ -356,32 +370,38 @@
         padding-right: 10px;
         gap: 20px;
     }
+
     div.item {
         width: 100%;
         max-width: 350px;
         margin: 0 auto;
         padding: 15px;
     }
+
     div.container img {
         width: 100%;
         height: auto;
     }
+
     div.item h2 {
         font-size: 18px;
     }
+
     div.item p {
         font-size: 14px;
         padding-left: 10px;
         padding-right: 10px;
     }
+
     div.item p.intensidade {
         font-size: 16px;
     }
+
     /* Fundo café 2 */
     #fundocafe2 {
         height: auto;
         padding: 40px 20px;
-        background-position: center ;
+        background-position: center;
     }
 
     #fundocafe2 h2 {
@@ -396,6 +416,7 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+
     /* Depoimentos */
     div.container2 {
         flex-direction: column;
@@ -404,37 +425,45 @@
         padding-right: 10px;
         gap: 20px;
     }
+
     div.item2 {
         width: 100%;
         max-width: 350px;
         margin: 0 auto;
         padding: 15px 20px;
     }
+
     div.item2 h2 {
         font-size: 20px;
     }
+
     div.item2 p {
         font-size: 14px;
     }
+
     #por img {
         width: 40px;
         height: 40px;
     }
+
     /* Perguntas */
     .perguntas {
         flex-wrap: wrap;
         padding: 20px 10px;
         padding-top: 0px;
     }
+
     .esquerda, .direita {
         flex: 1 1 100%;
         margin: 0 0 20px 0;
         text-align: center;
     }
+
     .esquerda h2 {
         font-size: 30px;
 
     }
+
     .imagem-cafe {
         padding-top: 10px;
         width: 250px;
@@ -451,6 +480,7 @@
         gap: 10px;
         margin: 0 10px;
     }
+
     .pergunta {
         font-size: 14px;
         padding: 12px 15px;
@@ -462,15 +492,18 @@
         padding: 30px 15px;
         border-radius: 15px;
     }
+
     #fundocafe3 h2 {
         font-size: 24px;
         margin: 0 10px 15px 10px;
         padding-top: 20px;
     }
+
     #fundocafe3 p {
         font-size: 15px;
         margin: 0 10px 20px 10px;
     }
+
     /* Formulário */
     form {
         height: auto;
@@ -481,6 +514,7 @@
         font-size: 14px;
         padding: 10px 15px;
     }
+
     .campo button {
         font-size: 14px;
         padding: 10px 20px;

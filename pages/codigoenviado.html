@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu sua senha</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/mediaquery.css">
+</head>
+<style>
+    
+    section#login > div#imagem {
+    background: #2B2738 url(../imagens/mountain-minimal-4k.jpg) no-repeat;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+    background-size: cover;
+    background-position: center;
+    width: 96%;
+    height: 48%;
+    margin: 17px;
+    margin-top: 0px;
+    border-radius: 10px;
+    transform: translateY(-100px);
+    }
+
+    section#login > div#imagem:hover {
+        transform: translateY(-105px);
+    }
+
+    p#emailsenha , p#emailsenha-msg {
+    color: rgb(203, 206, 209);
+    font-size: 27px;
+    padding-left: 50%;
+    padding-right: 8%;
+    transform: translateY(-120px);
+    
+    }
+
+    h1#emailsenha {
+    font-size: 20px;
+    color: rgb(203, 206, 209);
+    padding-right: 50%;
+    padding-bottom: 10px;
+    }
+
+    div.campo {
+        transform: translateY(-115px);
+    }
+
+    form > input[type=submit] {
+    transform: translateY(-115px);
+    }
+
+@media screen and (max-width: 800px) {
+
+    section#login > div#formulario {
+        transform: translate(5%,10%);    
+    }
+    section#login > div#imagem {
+        width: 90%;
+        height: 50%;
+        transform: translate(-2px, 20px);
+    }
+
+    section#login > div#imagem:hover {
+        transform: translate(-2px, 17px);
+    }
+
+    h1#emailsenha {
+        font-size: 24px !important;
+        text-align: center;
+        padding-top: 35px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    p#emailsenha , p#emailsenha-msg {
+        text-align: center;
+        font-size: 16px;
+        padding-left: 0%;
+        padding-right: 8%;
+        transform: translateY(-40px);
+    }   
+    
+    div.campo {
+        transform: translateY(40px);
+    }
+    
+    div.campo > input {
+        font-size: 1em;
+        height: 35px;
+    }
+
+    form > input[type=submit] {
+        transform: translateY(-15px);
+        width: 242px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 992px) {
+
+    section#login > div#formulario {
+    transform: translate(5%,10%);
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    }
+
+    section#login > div#imagem {
+    width: 96%;
+    height: 47%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 17px;
+    transform: translateY(-150px);
+    }
+    
+    section#login > div#imagem:hover {
+        transform: translateY(-155px);
+    }
+
+
+    #emailsenha-msg {
+        white-space: normal; /* deixa quebrar linha */
+        word-break: break-word; /* quebra palavras longas se precisar */
+    }
+
+    h1#emailsenha {
+    font-size: 33px !important; 
+    color: rgb(203, 206, 209);
+    padding-right: 50%;
+    margin-bottom: 20px;
+    }
+
+    p#emailsenha , p#emailsenha-msg {
+    color: rgb(203, 206, 209);
+    font-size: 28px;
+    padding-left: 50%;
+    padding-right: 8%;
+    transform: translateY(-110px);
+    }
+    div.campo {
+        transform: translateY(-170px);
+        padding-top: 14px;
+    }
+
+    form > input[type=submit] {
+    transform: translateY(-160px);
+    }
+}
+</style>
+<body>
+    <main>
+        <section id="login">
+            
+            <div id="formulario">
+                <a id="voltar" href="esqueceusuasenha.html">← Voltar</a>
+                <h1 id="emailsenha">Digite o código enviado</h1>
+                <p id="emailsenha-msg">
+                    Um código foi enviado para o email "".
+                </p>
+                <form action="registrar.html" method="post" autocomplete="on">
+                    <div class="campo">
+                        <input type="password" name="login" id="ilogin" placeholder="Código" autocomplete="email" minlength="5" maxlength="5">
+                        <label for="ilogin">Código</label>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <div id="imagem">
+            </div>
+        </section>
+    </main>
+    <script>
+        function encurtarEmail(email, limite) {
+            if (email.length > limite) {
+                var usuario, dominio;
+                [usuario, dominio] = email.split("@");
+                if (usuario.length > limite - dominio.length - 3) {
+                    usuario = usuario.substring(0, limite - dominio.length - 3) + "...";
+                }
+                return usuario + "@" + dominio;
+            }
+            return email;
+        }
+
+        var email = localStorage.getItem("emailRecuperacao");
+
+        if (email) {
+            var largura = window.innerWidth;
+            var limite = 25; // padrão tablet e desktop
+
+            if (largura < 768) { // celular
+                limite = 18;
+            }
+
+            var emailFormatado = encurtarEmail(email, limite);
+            document.getElementById("emailsenha-msg").textContent =
+                `Um código foi enviado para o email "${emailFormatado}".`;
+        }
+    </script>
+</body>
+</html>

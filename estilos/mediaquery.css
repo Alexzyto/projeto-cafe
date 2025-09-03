@@ -236,7 +236,7 @@
     }
     
     #fundocafe {
-        height: 800px;
+        height: 600px;
         background-position: center ;
         background-size: cover;
     }
@@ -366,7 +366,7 @@
     }
 
     .cafes li {
-        font-size: 2.4vw;
+        font-size: 2.7vw;
     }
 
     h2#prove-nossos {
@@ -391,7 +391,7 @@
 
     div.item {
         width: 100%;
-        max-width: 350px;
+        max-width: 300px;
         margin: 0 auto;
         padding: 15px;
     }

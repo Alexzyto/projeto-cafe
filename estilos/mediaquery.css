@@ -27,7 +27,7 @@
         height: 50px;
         margin-right: 10px;
     }
-    header > h1 {
+    header  h1 {
         position: static;
         transform: none;
         font-size: 56px;
@@ -244,7 +244,7 @@
         height: 40px;
         margin-right: 10px;
     }
-    header > h1 {
+    header  h1 {
         position: static;
         transform: none;
         font-size: 48px;

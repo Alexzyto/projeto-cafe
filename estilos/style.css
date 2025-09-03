@@ -6,10 +6,10 @@
     box-sizing: border-box;
 }
 html {
-    
     max-width: 1200px;
     margin: auto;
     background-color: #3a1f0d;
+    scroll-behavior: smooth;
 }
 body {
     background-color: #F5D5BC; /* cor base por trás da imagem */
@@ -38,6 +38,7 @@ header {
     margin-bottom: 80px;
 }
 
+
 header img {
     width: 60px;
     height: 60px;
@@ -54,9 +55,15 @@ header > h1 {
     left: 0;   
 }
 
+#logo {
+    transition: all 0.3s;
+}
+
+#logo:hover {
+    transform: scale(1.1); /* aumenta levemente sem quebrar layout */
+}
 nav {
     min-width: 400px;
-    
     display: flex;
     gap: 25px;
     background-color: #9e8f7a79;
@@ -74,7 +81,7 @@ nav > a {
 }
 
 nav a:hover {
-    color: #F7D2B7;
+    color: #3a1f0d;
      transform: scale(1.1); /* aumenta levemente sem quebrar layout */
 }
 
@@ -200,7 +207,7 @@ ul > img {
 }
 
 .cafes li:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 h2#prove-nossos {
@@ -233,9 +240,13 @@ div.item {
     border: 4px solid rgb(255, 255, 255);
     padding-top: 20px;
     text-align: center;
-
+    transition: all 0.3s;
 }
 
+div.item:hover {
+    transform: scale(1.02); /* aumenta levemente sem quebrar layout */
+    background: linear-gradient(to bottom, #e9a877, #fff);
+}
 div.container img {
     width: 240px;
     height: 240px;
@@ -297,9 +308,13 @@ div.item2 {
     text-align: center;
     border-radius: 15px;
     margin-bottom: 25px;
-
+    transition: all 0.3s;
 }
 
+div.item2:hover {
+    background-color: #ffd39a;
+    transform: scale(1.02); /* aumenta levemente sem quebrar layout */
+}
 div.container2 img {
     width: 50px;
     height: 50px;
@@ -324,6 +339,10 @@ div.item2 p {
 
 #destacado {
     background-color: #FFF8F2;
+}
+
+#destacado:hover {
+    background-color: #ffd39a;
 }
 
 /**/

@@ -12,6 +12,7 @@ body, html {
     background: #F7D2B7 url(../imagens/img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
      /* background-image: linear-gradient(to top, #32264b88, #4c266898); */
     color: white;
 }
@@ -96,7 +97,7 @@ p#aindanaotemconta {
 
 a#facalogin , a#termos {
     text-decoration: none;
-    color: #eeb68f;
+    color: #5c341a;
     padding: 7px; /* Ajusta o padding para melhor espaçamento */
 }
 
@@ -225,11 +226,13 @@ form > input[type=submit] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s all;
     
 }
 
 form > input[type=submit]:hover {
-    background-color: #3a1f0d;
+    background-color: #f0c7ac;
+    color: #3a1f0d;
 }
 
 .divider {

@@ -62,6 +62,7 @@ header > h1 {
 #logo:hover {
     transform: scale(1.1); /* aumenta levemente sem quebrar layout */
 }
+
 nav {
     min-width: 400px;
     display: flex;
@@ -71,6 +72,7 @@ nav {
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.432);
 }
+
 nav > a {
     text-decoration: none;
     color: rgb(255, 246, 235);
@@ -82,12 +84,13 @@ nav > a {
 
 nav a:hover {
     color: #3a1f0d;
-     transform: scale(1.1); /* aumenta levemente sem quebrar layout */
+    transform: scale(1.1); /* aumenta levemente sem quebrar layout */
 }
 
 a.btn-buy {
     margin-right: 2vw;
 }
+
 .btn-buy {
     position: absolute;
     right: 0;
@@ -247,6 +250,7 @@ div.item:hover {
     transform: scale(1.02); /* aumenta levemente sem quebrar layout */
     background: linear-gradient(to bottom, #e9a877, #fff);
 }
+
 div.container img {
     width: 240px;
     height: 240px;
@@ -315,11 +319,11 @@ div.item2:hover {
     background-color: #ffd39a;
     transform: scale(1.02); /* aumenta levemente sem quebrar layout */
 }
+
 div.container2 img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-
 }
 
 div.item2 h2 {
@@ -348,21 +352,21 @@ div.item2 p {
 /**/
 
 .perguntas {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px;
 }
 
 /* Coluna esquerda */
 .esquerda {
-  flex: 1;
-  margin-left: 80px;
+    flex: 1;
+    margin-left: 80px;
 }
 
 .esquerda h2 {
-  font-size: 50px;
-  font-weight: bold;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .imagem-cafe {
@@ -373,25 +377,25 @@ div.item2 p {
 
 /* Coluna direita */
 .direita {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-right: 45px;
-  margin-left: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-right: 45px;
+    margin-left: 30px;
 }
 
 .pergunta {
-  background: #724d31;
-  color: white;
-  padding: 15px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+    background: #724d31;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
 .pergunta:hover {
-  transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 #fundocafe3 {
@@ -423,55 +427,55 @@ div.item2 p {
 /**/
 
 form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
 }
 
 .campo {
-  display: flex;
-  background: white;
-  border-radius: 50px;
-  padding: 5px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  max-width: 400px; /* largura opcional */
+    display: flex;
+    background: white;
+    border-radius: 50px;
+    padding: 5px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px; /* largura opcional */
 }
 
 .campo input {
-  border: none;
-  outline: none;
-  padding: 12px 18px;
-  border-radius: 50px;
-  font-size: 14px;
-  flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-size: 14px;
+    flex: 1;
 }
 
 .campo button {
-  border: none;
-  outline: none;
-  padding: 12px 25px;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-  background: linear-gradient(135deg, #eacda3, #d6ae7b);
-  color: #333;
-  transition: 0.3s ease;
+    border: none;
+    outline: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(135deg, #eacda3, #d6ae7b);
+    color: #333;
+    transition: 0.3s ease;
 }
 
 .campo button:hover {
-  background: linear-gradient(135deg, #d6ae7b, #eacda3);
-  transform: scale(1.05);
+    background: linear-gradient(135deg, #d6ae7b, #eacda3);
+    transform: scale(1.05);
 }
 
 /* Botão hamburguer (esconde no desktop) */
 .menu-toggle {
-  display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  color: #fff6eb;
-  cursor: pointer;
-  margin-left: auto;
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #fff6eb;
+    cursor: pointer;
+    margin-left: auto;
 }

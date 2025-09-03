@@ -8,18 +8,64 @@
     <link rel="stylesheet" href="../estilos-login/mediaquery.css">
 </head>
 <style>
+    header {
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+    }
+
+    header img {
+        width: 90px;
+        height: 90px;
+    }
+
+    header a {
+        font-family: 'Outfit', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #F7D2B7;
+        font-size: 70px;
+        text-shadow: 2px 2px 2px #38251E;
+        text-decoration: none;
+    }
+
+    #logo {
+        transition: all 0.3s;
+    }
+
+    #logo:hover {
+        transform: scale(1.1); /* aumenta levemente sem quebrar layout */
+    }
+
     @media screen and (min-width: 800px) {
-        .campo1 , .campo2 {
-            padding-bottom: 35px;
-            
-        }
-        .campo2 {
-            transform: translateY(-35px);
-        }
-    } 
+    .campo1 , .campo2 {
+        padding-bottom: 35px;
+        
+    }
+    .campo2 {
+        transform: translateY(-35px);
+    }
+} 
+    @media screen and (max-width: 800px) {
+
+    header {
+        padding-top: 90px;
+    }
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    header a {
+        font-size: 50px;  
+    }
+    }
 </style>
 <body>
-    <main>        
+    <main>
+        <header>
+            <img src="../imagens/cafe-logo.png" alt="cafe-logo" id="logo">
+            <a href="../index.html">Verna</a>               
+        </header>
         <section id="login">
             <div id="imagem">
 
